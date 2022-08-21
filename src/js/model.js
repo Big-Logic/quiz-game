@@ -67,10 +67,6 @@ const updateUser = async function (obj, pincode) {
         accoun: [obj],
       }),
     });
-
-    if (response.ok) {
-      result = await response.json();
-    }
   } catch (err) {
     throw new Error("An Error occur");
   }
@@ -313,7 +309,7 @@ export const createAccount = async function (firstname, lastname, username) {
     const response = await createUser(acc);
     state.activeUser = response;
     await updateUser(state.activeUser, state.activeUser.id);
-
+    console.log();
     return state.activeUser.id;
   } catch (err) {
     console.log(err);
