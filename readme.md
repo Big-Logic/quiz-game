@@ -1,8 +1,8 @@
-#GENTLE QUIZ
+# GENTLE QUIZ
 
 this is a simple quiz game that is base on simple apis.
 
-##List of a api types
+## List of a api types
 
 1. Json Storage API
 
@@ -12,6 +12,6 @@ this is a simple quiz game that is base on simple apis.
 
 4. LocalStorage API
 
-##This the project link
+## This the project link
 
 ---
