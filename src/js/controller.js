@@ -131,3 +131,5 @@ const handleLocalCheck = async function () {
 };
 
 handleLocalCheck();
+
+console.log("Copyright by Big Logic!!!");
