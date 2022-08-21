@@ -49,6 +49,7 @@ const createUser = async function (obj) {
       return data;
     }
   } catch (err) {
+    console.log(err);
     throw new Error(err.message);
   }
 };
@@ -164,6 +165,7 @@ export const deleteUser = async function () {
 export const login = async function (userName, pincode) {
   try {
     const userData = await fetchUser(pincode);
+    console.log(userData);
     if (userData.username !== userName) {
       throw new Error("Username or Pincode is incorrect!!");
     }
@@ -314,6 +316,7 @@ export const createAccount = async function (firstname, lastname, username) {
 
     return state.activeUser.id;
   } catch (err) {
+    console.log(err);
     throw new Error(err.message);
   }
 };

@@ -118,7 +118,9 @@ const handleLocalCheck = async function () {
     loginView.renderLoginView(handleSignupRender);
     const handleLogin = async function (usr, psd) {
       try {
+        console.log(usr, psd);
         await login(usr, psd);
+        console.log(state.isLogin, "Hi");
         if (state.isLogin) {
           logUserIn();
         }
