@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Gentle Quiz</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="src/styles/main.css" />
+    <script defer type="module" src="src/js/controller.js"></script>
+  </head>
+  <body id="body">
+    <!-- <section class="signup__wrapper form__wrapper">
+      <div class="signup__cont form__cont">
+        <div class="signup__image--cont form__image--cont">
+          <i class="las la-user"></i>
+        </div>
+        <header class="signup__header--cont form__header--cont">
+          <h2 class="signup__header">SIGNUP</h2>
+        </header>
+
+        <form action="#" class="signup__form main__form">
+          <div class="signup__firstname--cont form__input--cont">
+            <div class="signup__firstname--label-cont form__input--labelcont">
+              <label for="signup__firstname"
+                ><i class="las la-user-edit"></i
+              ></label>
+            </div>
+            <div class="signup__firstname--cont">
+              <input
+                type="text"
+                name="firstname"
+                id="signup__firstname"
+                required
+                class="form__input"
+                placeholder="First Name"
+                pattern="^[a-zA-Z]+$"
+                minlength="2"
+                title="This input accepts only letters"
+              />
+            </div>
+          </div>
+          <div class="signup__surname--cont form__input--cont">
+            <div class="signup__surname--label-cont form__input--labelcont">
+              <label for="signup__surname"
+                ><i class="las la-user-edit"></i
+              ></label>
+            </div>
+            <div class="signup__surname--cont">
+              <input
+                type="text"
+                name="surname"
+                id="signup__surname"
+                required
+                class="form__input"
+                placeholder="Surname"
+                minlength="2"
+                pattern="^[a-zA-Z]+$"
+                title="This input accepts only letters"
+              />
+            </div>
+          </div>
+          <div class="signup__username--cont form__input--cont">
+            <div class="signup__username--label-cont form__input--labelcont">
+              <label for="signup__username"><i class="las la-user"></i></label>
+            </div>
+            <div class="signup__username--cont">
+              <input
+                type="text"
+                name="username"
+                id="signup__username"
+                required
+                class="form__input"
+                placeholder="Username"
+                minlength="6"
+              />
+            </div>
+          </div>
+          <div class="signup__password--cont form__input--cont">
+            <div class="signup__password--label-cont form__input--labelcont">
+              <label for="signup__password"><i class="las la-lock"></i></label>
+            </div>
+            <div class="signup__password--cont">
+              <input
+                type="text"
+                name="password"
+                id="signup__password"
+                required
+                class="form__input"
+                placeholder="pincode"
+                pattern="^[0-9]*$"
+                minlength="1000"
+                title="This input takes only numbers!! and should be 6 or more characters long!!"
+              />
+            </div>
+          </div>
+
+          <button type="submit" class="login__btn form__submit--btn">
+            signup
+          </button>
+          <div class="link__to--signupandfp-cont">
+            <button type="button" class="link__to--signup-btn link__button">
+              I have an account
+            </button>
+          </div>
+        </form>
+      </div>
+    </section> -->
+    <!-- <section class="login__wrapper form__wrapper">
+      <div class="login__cont form__cont">
+        <div class="login__image--cont form__image--cont">
+          <i class="las la-user"></i>
+        </div>
+        <header class="login__header--cont form__header--cont">
+          <h2 class="login__header">LOGIN</h2>
+        </header>
+
+        <form action="#" class="login__form main__form">
+          <div class="login__username--cont form__input--cont">
+            <div class="login__username--label-cont form__input--labelcont">
+              <label for="login__username"><i class="las la-user"></i></label>
+            </div>
+            <div class="login__username--cont">
+              <input
+                type="text"
+                name="username"
+                id="login__username"
+                required
+                class="form__input"
+                placeholder="Username"
+              />
+            </div>
+          </div>
+          <div class="login__password--cont form__input--cont">
+            <div class="login__password--label-cont form__input--labelcont">
+              <label for="login__password"><i class="las la-lock"></i></label>
+            </div>
+            <div class="login__password--cont">
+              <input
+                type="text"
+                name="password"
+                id="login__password"
+                required
+                class="form__input"
+                placeholder="pincode"
+              />
+            </div>
+          </div>
+
+          <button type="submit" class="login__btn form__submit--btn">
+            LogIn
+          </button>
+          <div class="link__to--signupandfp-cont">
+            <button type="button" class="link_to--fp-btn link__button">
+              Forgot my password
+            </button>
+            <button type="button" class="link__to--signup-btn link__button">
+              I don't have an account
+            </button>
+          </div>
+        </form>
+      </div>
+    </section> -->
+
+    <main class="main__content--wrapper">
+      <!-- <section class="dashboard__wrapper">
+        <div class="dashboard__cont">
+          <div class="dashboard__child participians__wrapper">
+            <header class="main__header--cont">
+              <h1 class="main__header">Gentle Quiz</h1>
+            </header>
+            <div class="participians__cont">
+              <h2 class="participians__header">Participians</h2>
+              <div class="participians">
+                <div class="participian">
+                  <img
+                    src="src/images/male.png"
+                    alt="Alfred"
+                    class="participian__image"
+                  />
+                  <p>Alfred Ngwayah</p>
+                </div>
+                <div class="participian">
+                  <img
+                    src="src/images/male.png"
+                    alt="Alfred"
+                    class="participian__image"
+                  />
+                  <p>Alfred Ngwayah</p>
+                </div>
+                <div class="participian">
+                  <img
+                    src="src/images/male.png"
+                    alt="Alfred"
+                    class="participian__image"
+                  />
+                  <p>Alfred Ngwayah</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard__child content__wrapper">
+            <div class="nav__bar--cont">
+              <header class="main__header--cont-hidden">
+                <h1 class="main__header"><span>G-Quiz</span></h1>
+              </header>
+              <div class="content__child nav__bar">
+                <div class="nav__items">
+                  <button class="user__setting--btn setting__btn">
+                    <i class="las la-user-circle"></i>
+                  </button>
+                </div>
+                <div class="nav__items">
+                  <button class="general__setting--btn setting__btn">
+                    <i class="las la-cog"></i>
+                  </button>
+                </div>
+                <div class="nav__items active__user--cont">
+                  <h2 class="active__user--name">Alfred</h2>
+                  <div class="active__user--image-cont">
+                    <img src="src/images/male.png" alt="Alfred Ngwayah" />
+                  </div>
+                </div>
+                <div class="nav__items"></div>
+              </div>
+            </div>
+            <div class="content__child game__joke--wrapper">
+              <div class="game__joke--child game__cont">
+                <h3 class="quiz__header">Quiz</h3>
+
+                <div class="quiz__main">
+                  <div class="quiz__play--btn-cont">
+                    <button class="quiz__play--btn">Start a new Quiz</button>
+                  </div>
+                </div>
+              </div>
+              <div class="game__joke--child joke__cont">
+                <h3 class="joke__header">Jokes of today</h3>
+                <p class="joke__content">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
+                  dolores doloremque numquam, quibusdam quis dignissimos aliquam
+                  eveniet sequi fuga voluptatum laborum illum ipsa architecto
+                  quas odit deleniti aspernatur officiis distinctio!
+                </p>
+                <p class="joke__emoji">😁 😆 😅 😂 🤣</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- <div class="quiz__detail--wrapper">
+                  <div class="quiz__detail--cont">
+                    <p>Computer</p>
+                    <p>Category</p>
+                  </div>
+                  <div class="quiz__detail--cont">
+                    <p>Easy</p>
+                    <p>Difficulty</p>
+                  </div>
+                  <div class="quiz__detail--cont">
+                    <p><span>40</span>%/100%</p>
+                    <p>score</p>
+                  </div>
+                  <div class="quiz__detail--cont">
+                    <p>3</p>
+                    <p>Attempts</p>
+                  </div>
+                  <div class="quiz__detail--cont">
+                    <p><span>4</span>/25</p>
+                    <p>Pass</p>
+                  </div>
+                  <div class="quiz__detail--cont">
+                    <p><span>4</span>/25</p>
+                    <p>Fail</p>
+                  </div>
+                </div> -->
+
+      <!-- <div class="quiz__main--wrapper">
+                    <p class="quiz__question">
+                      01. &nbsp; &nbsp; Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Quo iste ipsum perspiciatis excepturi
+                      maiores at?
+                    </p>
+
+                    <div class="answer1__wrapper">
+                      <button class="answer1__btn answer__btn">
+                        (A)
+                        <span id="answer__1">Lorem ipsum dolor sit amet.</span>
+                      </button>
+                    </div>
+                    <div class="answer2__wrapper">
+                      <button class="answer1__btn answer__btn">
+                        (B)
+                        <span id="answer__1">Lorem ipsum dolor sit amet.</span>
+                      </button>
+                    </div>
+                    <div class="answer3__wrapper">
+                      <button class="answer1__btn answer__btn">
+                        (C)
+                        <span id="answer__1">Lorem ipsum dolor sit amet.</span>
+                      </button>
+                    </div>
+                    <div class="answer4__wrapper">
+                      <button class="answer1__btn answer__btn">
+                        (D)
+                        <span id="answer__1">Lorem ipsum dolor sit amet.</span>
+                      </button>
+                    </div>
+
+                    <div class="question__next--btn-wrapperandtimeout">
+                      <div>
+                        <p class="question__timeout">
+                          Remaining <span class="timout__main">00:15</span>
+                        </p>
+                      </div>
+                      <div>
+                        <button class="question__next--btn">Next</button>
+                      </div>
+                    </div>
+                  </div> -->
+
+      <!-- Quiz setup popup -->
+      <!-- <section class="account__setup--main popup">
+        <div class="account__setupmain--wrapper">
+          <button type="button" class="accountsetup__close--btn">
+            <i class="las la-times-circle"></i>
+          </button>
+          <form action="#" class="account__setup">
+            <header class="account__setup--header">
+              <h2>Setting</h2>
+            </header>
+
+            <div class="accountname__setup account__setup--div">
+              <label for="accountname">Full Name</label>
+              <input
+                type="text"
+                id="accountname"
+                name="accountName"
+                required
+              />
+            </div>
+            <div class="account__setup--div account__setup--btn-cont">
+              <button type="submit" class="setup__submit--btn account__setup--btn">
+                Continue
+              </button>
+            </div>
+          </form>
+        </div>
+      </section> -->
+    </main>
+
+    <!-- <button class="participians__view--btn">View Players</button> -->
+  </body>
+</html>
